@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adventure World | Adventure Park near Kothagudem, Telangana</title>
+  <meta name="description" content="Adventure World is an adventure park near Vepalagadda, Kothagudem, Bhadradri Kothagudem district, Telangana. Bumping Cars, Bungee Jumping, Go-Kart Racing, Ziplining, a Giant Wheel, Pirate Ship Ride, Water Slides and more. Send an enquiry to plan your visit.">
+  <meta name="theme-color" content="#F4EFE7">
+
+  <!-- Social sharing preview -->
+  <meta property="og:title" content="Explore Adventure World — Bumping Cars &amp; Bungee Jumping">
+  <meta property="og:description" content="An adventure park near Vepalagadda, Kothagudem, Telangana.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts: Cormorant Garamond (headlines) + Manrope (text), from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Tells the CSS that JavaScript is running (used for animations) -->
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- =========================================================
+       NAVIGATION: a floating pill
+       ========================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress"></span></div>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="Adventure World — back to top">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M3 33 L15 13 L21 22 L26 15 L37 33 Z" fill="currentColor"/>
+          <path d="M26 15 V5" stroke="#2FB05E" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="26" cy="4.5" r="2.4" fill="#2FB05E"/>
+        </svg>
+        <span class="logo-text">Adventure <span>World</span></span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-dark btn-sm" href="#visit">Plan your visit <span class="btn-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- =========================================================
+         A. HERO — one collage picture of all the activities, in a
+         rounded frame. Each tile is a real photo with a label.
+         To change a photo, replace its <img>.
+         ========================================================= -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-frame">
+        <div class="hero-mosaic" data-parallax="0.1" aria-hidden="true">
+          <figure class="mosaic-tile mosaic-tile--bump">
+            <img src="assets/images/bumper-cars-indoor-riders.jpg" alt="" width="1800" height="1100" fetchpriority="high" decoding="async">
+          </figure>
+          <figure class="mosaic-tile mosaic-tile--bungee">
+            <img src="assets/images/bungee-jump-river.jpg" alt="" width="2000" height="1600" decoding="async" style="object-position: 60% 35%">
+          </figure>
+          <figure class="mosaic-tile mosaic-tile--buggy">
+            <img src="assets/images/hero-atv-forest-trail.jpg" alt="" width="2400" height="1350" decoding="async" style="object-position: 70% center">
+          </figure>
+          <figure class="mosaic-tile mosaic-tile--jump">
+            <img src="assets/images/jumping-bungee-trampoline.jpg" alt="" width="900" height="1350" decoding="async" style="object-position: center 78%">
+          </figure>
+        </div>
+        <div class="hero-shade" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <h1 class="hero-title" id="hero-title">
+            <span class="line"><span>Explore</span></span>
+            <span class="line"><span><em>Adventure World</em></span></span>
+          </h1>
+          <div class="hero-actions">
+            <a class="text-link text-link--light" href="#activities">Explore Activities <span class="btn-arrow" aria-hidden="true">→</span></a>
+            <span class="hero-rule" aria-hidden="true"></span>
+            <a class="text-link text-link--light text-link--quiet" href="#visit">Plan your visit</a>
+          </div>
+        </div>
+
+        <!-- Select your Adventure World: the district and the park.
+             Place photo: Wikimedia Commons (credit in the footer). -->
+        <nav class="places" aria-labelledby="places-title">
+          <p class="places-title" id="places-title">Select your Adventure World</p>
+          <ul class="places-list">
+            <li>
+              <a class="place-card" href="https://www.google.com/maps/search/?api=1&amp;query=Bhadradri%20Kothagudem%20district%2C%20Telangana" target="_blank" rel="noopener">
+                <img src="assets/images/place-bhadrachalam-temple.jpg" alt="Sri Seetha Ramachandraswamy Temple at Bhadrachalam, Bhadradri Kothagudem" width="800" height="533" loading="lazy" decoding="async">
+                <span class="place-name">Bhadradri Kothagudem</span>
+                <span class="place-sub">The district ↗</span>
+              </a>
+            </li>
+            <li>
+              <a class="place-card place-card--park" href="https://www.google.com/maps/search/?api=1&amp;query=Vepalagadda%2C%20Kothagudem%2C%20Telangana" data-directions target="_blank" rel="noopener">
+                <img src="assets/images/gallery-bumper-cars-row.jpg" alt="" width="1400" height="1202" loading="lazy" decoding="async">
+                <span class="place-pin" aria-hidden="true">Park</span>
+                <span class="place-name">Vepalagadda</span>
+                <span class="place-sub">Adventure World is here ↗</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="scroll-guide" href="#activities"><span>Scroll</span><span class="scroll-line" aria-hidden="true"></span></a>
+      </div>
+    </section>
+
+    <!-- Word band under the hero (decorative; moves with the scroll) -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Bumping Cars</span><i>•</i><span>Bungee Jumping</span><i>•</i><span>Buggy Rides</span><i>•</i><span>Jumping Activities</span><i>•</i><span>Giant Wheel</span><i>•</i><span>Ziplining</span><i>•</i><span>Go-Kart Racing</span><i>•</i><span>Pirate Ship Ride</span><i>•</i><span>Water Slides</span><i>•</i>
+        <span>Bumping Cars</span><i>•</i><span>Bungee Jumping</span><i>•</i><span>Buggy Rides</span><i>•</i><span>Jumping Activities</span><i>•</i><span>Giant Wheel</span><i>•</i><span>Ziplining</span><i>•</i><span>Go-Kart Racing</span><i>•</i><span>Pirate Ship Ride</span><i>•</i><span>Water Slides</span><i>•</i>
+      </div>
+    </div>
+
+    <!-- =========================================================
+         B. PICK YOUR THRILL — sideways carousel of activity cards
+         Each card with data-activity also becomes an option in the
+         enquiry form's "Interested in" list. Clicking a card opens
+         the form with that activity selected.
+         ========================================================= -->
+    <section class="section thrill" id="activities" aria-labelledby="thrill-title">
+      <div class="container">
+        <header class="thrill-head">
+          <div>
+            <p class="label reveal">Explore by adventure</p>
+            <h2 class="section-title reveal" id="thrill-title">Feel the Thrill. <em>Live the Adventure.</em></h2>
+          </div>
+        </header>
+      </div>
+
+      <!-- Centre-focused carousel (script.js, initCarousel): the current
+           card sits in the middle with its neighbours peeking in at the
+           sides. Arrows, drag (mouse) and swipe (touch) move one card.
+           Clicking a side card brings it to the middle; clicking the
+           middle card opens the enquiry form.
+           Once real videos are added (SITE_CONFIG.heroVideos in script.js)
+           each card plays its video on top of the photo while on screen. -->
+      <div class="thrill-carousel reveal" id="thrill-carousel" role="region" aria-roledescription="carousel" aria-label="Activities">
+        <div class="thrill-track" id="thrill-track">
+        <a class="thrill-card" href="#contact" data-activity="Bumping Cars" data-enquire="Bumping Cars" data-video="bumper">
+          <div class="tc-media"><img src="assets/images/bumper-cars-carnival-riders.jpg" alt="" width="1400" height="1076" loading="lazy" decoding="async" draggable="false"></div>
+          <span class="tc-body">
+            <span class="tc-tag">Race &amp; bump</span>
+            <span class="tc-name">Bumping Cars</span>
+          </span>
+          <span class="tc-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="thrill-card" href="#contact" data-activity="Bungee Jumping" data-enquire="Bungee Jumping" data-video="bungee">
+          <div class="tc-media"><img src="assets/images/bungee-crane-platform.jpg" alt="" width="900" height="1200" loading="lazy" decoding="async" draggable="false"></div>
+          <span class="tc-body">
+            <span class="tc-tag">Height &amp; freefall</span>
+            <span class="tc-name">Bungee Jumping</span>
+          </span>
+          <span class="tc-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="thrill-card" href="#contact" data-activity="Buggy Rides" data-enquire="Buggy Rides" data-video="buggy">
+          <div class="tc-media"><img src="assets/images/gallery-atv-dirt.jpg" alt="" width="1400" height="2069" loading="lazy" decoding="async" draggable="false" style="object-position: center 40%"></div>
+          <span class="tc-body">
+            <span class="tc-tag">Off-road</span>
+            <span class="tc-name">Buggy Rides</span>
+          </span>
+          <span class="tc-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="thrill-card" href="#contact" data-activity="Jumping Activities" data-enquire="Jumping Activities" data-video="jumping">
+          <div class="tc-media"><img src="assets/images/jumping-bungee-trampoline.jpg" alt="" width="900" height="1350" loading="lazy" decoding="async" draggable="false" style="object-position: center 60%"></div>
+          <span class="tc-body">
+            <span class="tc-tag">Bounce &amp; flip</span>
+            <span class="tc-name">Jumping Activities</span>
+          </span>
+          <span class="tc-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="thrill-card" href="#contact" data-activity="Giant Wheel" data-enquire="Giant Wheel">
+          <div class="tc-media" data-ride="wheel" data-optional><img src="assets/images/giant-wheel-cabins.jpg" alt="" width="960" height="1440" loading="lazy" decoding="async" draggable="false"></div>
+          <span class="tc-body">
+            <span class="tc-tag">Sky-high views</span>
+            <span class="tc-name">Giant Wheel</span>
+          </span>
+          <span class="tc-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="thrill-card" href="#contact" data-activity="Ziplining" data-enquire="Ziplining">
+          <div class="tc-media" data-ride="zipline" data-optional><img src="assets/images/intro-zipline-platform.jpg" alt="" width="1000" height="1250" loading="lazy" decoding="async" draggable="false" style="object-position: 55% center"></div>
+          <span class="tc-body">
+            <span class="tc-tag">Fly the line</span>
+            <span class="tc-name">Ziplining</span>
+          </span>
+          <span class="tc-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="thrill-card" href="#contact" data-activity="Go-Kart Racing" data-enquire="Go-Kart Racing">
+          <div class="tc-media" data-ride="kart" data-optional><img src="assets/images/go-kart-track.jpg" alt="" width="1280" height="960" loading="lazy" decoding="async" draggable="false" style="object-position: 40% center"></div>
+          <span class="tc-body">
+            <span class="tc-tag">Speed &amp; corners</span>
+            <span class="tc-name">Go-Kart Racing</span>
+          </span>
+          <span class="tc-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="thrill-card" href="#contact" data-activity="Pirate Ship Ride" data-enquire="Pirate Ship Ride">
+          <div class="tc-media" data-ride="pirate" data-optional><img src="assets/images/pirate-ship-ride.jpg" alt="" width="960" height="1440" loading="lazy" decoding="async" draggable="false" style="object-position: center 55%"></div>
+          <span class="tc-body">
+            <span class="tc-tag">Swing &amp; soar</span>
+            <span class="tc-name">Pirate Ship Ride</span>
+          </span>
+          <span class="tc-arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="thrill-card" href="#contact" data-activity="Water Slides" data-enquire="Water Slides">
+          <div class="tc-media" data-ride="water" data-optional><img src="assets/images/water-slides-pool.jpg" alt="" width="1280" height="960" loading="lazy" decoding="async" draggable="false" style="object-position: 35% center"></div>
+          <span class="tc-body">
+            <span class="tc-tag">Slide &amp; splash</span>
+            <span class="tc-name">Water Slides</span>
+          </span>
+          <span class="tc-arrow" aria-hidden="true">→</span>
+        </a>
+        </div>
+        <button class="carousel-arrow carousel-arrow--prev" type="button" data-carousel="prev" aria-label="Previous activity">←</button>
+        <button class="carousel-arrow carousel-arrow--next is-active" type="button" data-carousel="next" aria-label="Next activity">→</button>
+        <p class="visually-hidden" id="thrill-status" aria-live="polite"></p>
+      </div>
+    </section>
+    
+
+    <!-- =========================================================
+         D. GALLERY
+         To use real photos: put them in assets/images/ and change
+         the src values below (and data-full, if you add one).
+         Tile sizes: g-big, g-tall, g-wide, g-full, or no extra class.
+         ========================================================= -->
+    <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="gallery-head">
+          <p class="label reveal">Gallery</p>
+          <h2 class="section-title reveal" id="gallery-title">Moments worth <em>the rush.</em></h2>
+        </header>
+
+        <!-- The same file is used for the tile and the large preview -->
+        <div class="gallery-grid">
+          <button class="gallery-item g-big reveal" type="button" aria-label="Open larger view: rider kicking up dirt on an ATV">
+            <img src="assets/images/gallery-atv-dirt.jpg" alt="Rider kicking up dirt on an ATV" width="1400" height="2069" loading="lazy" decoding="async">
+            <span class="gallery-caption" aria-hidden="true">Off-road</span>
+          </button>
+          <button class="gallery-item reveal" type="button" aria-label="Open larger view: rider in a helmet on a zip line above the hills">
+            <img src="assets/images/gallery-zipline-hillside.jpg" alt="Rider in a helmet on a zip line above the hills" width="1400" height="934" loading="lazy" decoding="async">
+            <span class="gallery-caption" aria-hidden="true">Zip line</span>
+          </button>
+          <button class="gallery-item g-tall reveal" type="button" aria-label="Open larger view: zip-line rider crossing above a forest">
+            <img src="assets/images/gallery-zipline-forest.jpg" alt="Zip-line rider crossing above a forest" width="1100" height="1650" loading="lazy" decoding="async">
+            <span class="gallery-caption" aria-hidden="true">Above the trees</span>
+          </button>
+          <button class="gallery-item reveal" type="button" aria-label="Open larger view: a row of bumper cars ready to ride">
+            <img src="assets/images/gallery-bumper-cars-row.jpg" alt="A row of bumper cars ready to ride" width="1400" height="933" loading="lazy" decoding="async">
+            <span class="gallery-caption" aria-hidden="true">Bumper cars</span>
+          </button>
+          <button class="gallery-item g-full reveal" type="button" aria-label="Open larger view: a row of ATVs parked on a grassy field">
+            <img src="assets/images/gallery-atvs-lined-up.jpg" alt="A row of ATVs parked on a grassy field" width="1800" height="1200" loading="lazy" decoding="async">
+            <span class="gallery-caption" aria-hidden="true">Ready to ride</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         E. PLAN YOUR VISIT
+         Address & contact details are set in script.js (SITE_CONFIG).
+         Menu "About" goes to the park details, "Contact" to the form.
+         ========================================================= -->
+    <section class="section visit" id="visit" aria-labelledby="visit-title">
+      <div class="container visit-grid">
+        <div class="visit-info" id="about">
+          <p class="label reveal">Contact us</p>
+          <h2 class="section-title reveal" id="visit-title">Find us near <em>Vepalagadda.</em></h2>
+
+          <dl class="visit-list reveal">
+            <div>
+              <dt>Area</dt>
+              <dd>Near Vepalagadda, Kothagudem</dd>
+            </div>
+            <div>
+              <dt>District</dt>
+              <dd>Bhadradri Kothagudem, Telangana, India</dd>
+            </div>
+            <div>
+              <dt>Address</dt>
+              <dd data-config="address" class="is-placeholder">Exact address to be added</dd>
+            </div>
+            <div>
+              <dt>Phone</dt>
+              <dd><a data-config="phone" class="is-placeholder" href="#visit">To be announced</a></dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a data-config="email" class="is-placeholder" href="#visit">To be announced</a></dd>
+            </div>
+          </dl>
+
+          <a class="btn btn-dark reveal" href="https://www.google.com/maps/search/?api=1&amp;query=Vepalagadda%2C%20Kothagudem%2C%20Telangana" data-directions target="_blank" rel="noopener">Get directions <span class="btn-arrow" aria-hidden="true">↗</span></a>
+          <p class="fine-print reveal" data-directions-note>Directions open a Google Maps search for the general area until the park's exact address is added.</p>
+        </div>
+
+        <div id="contact">
+          <form class="enquiry-form reveal" id="enquiry-form" novalidate>
+            <h3>Send an enquiry</h3>
+            <p class="form-note">This is an enquiry only, not a booking. The park will contact you to confirm any details.</p>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-name">Full name <span aria-hidden="true">*</span></label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="80" aria-describedby="f-name-err">
+                <p class="field-error" id="f-name-err"></p>
+              </div>
+              <div class="field">
+                <label for="f-phone">Phone number <span aria-hidden="true">*</span></label>
+                <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="10-digit mobile number" aria-describedby="f-phone-err">
+                <p class="field-error" id="f-phone-err"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-email">Email <span class="optional">(optional)</span></label>
+              <input id="f-email" name="email" type="email" autocomplete="email" aria-describedby="f-email-err">
+              <p class="field-error" id="f-email-err"></p>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-activity">Interested in</label>
+                <!-- Options are filled in automatically from the activity cards -->
+                <select id="f-activity" name="activity">
+                  <option value="Not sure yet">Not sure yet</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="f-people">Number of people <span class="optional">(optional)</span></label>
+                <input id="f-people" name="people" type="number" min="1" max="500" inputmode="numeric" aria-describedby="f-people-err">
+                <p class="field-error" id="f-people-err"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-date">Preferred visit date <span class="optional">(optional)</span></label>
+              <input id="f-date" name="date" type="date" aria-describedby="f-date-err">
+              <p class="field-error" id="f-date-err"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-message">Message <span class="optional">(optional)</span></label>
+              <textarea id="f-message" name="message" rows="4" maxlength="500" aria-describedby="f-message-err"></textarea>
+              <p class="field-error" id="f-message-err"></p>
+            </div>
+
+            <button class="btn btn-dark btn-block" type="submit">Send Enquiry</button>
+            <div class="form-status" id="form-status" role="status" aria-live="polite" hidden></div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT US SECTION -->
+<section class="aw-contact" id="contact">
+  <div class="aw-contact-container">
+
+    <div class="aw-contact-heading">
+      <span class="aw-contact-label">LET'S MAKE MEMORIES</span>
+      <h2>Contact <span>Adventure World</span></h2>
+      <p>
+        Have questions about rides, group visits, or bookings?
+        Get in touch with us. Your next adventure starts here!
+      </p>
+    </div>
+
+    <div class="aw-contact-grid">
+
+      <!-- LEFT: CONTACT INFORMATION -->
+      <div class="aw-contact-info">
+        <span class="aw-info-tag">YOUR NEXT THRILL AWAITS</span>
+        <h3>Let's plan your adventure!</h3>
+        <p>
+          From exciting rides to unforgettable moments with family
+          and friends, we're here to help you plan your visit.
+        </p>
+
+        <div class="aw-contact-item">
+          <div class="aw-contact-icon">📍</div>
+          <div>
+            <h4>Our Location</h4>
+            <p>Adventure World, Vepalagadda,<br>
+            Kothagudem, Telangana, India</p>
+          </div>
+        </div>
+
+        <div class="aw-contact-item">
+          <div class="aw-contact-icon">📞</div>
+          <div>
+            <h4>Call Us</h4>
+            <p>Add your official contact number</p>
+          </div>
+        </div>
+
+        <div class="aw-contact-item">
+          <div class="aw-contact-icon">✉️</div>
+          <div>
+            <h4>Email Us</h4>
+            <p>Add your official email address</p>
+          </div>
+        </div>
+
+        <div class="aw-contact-item">
+          <div class="aw-contact-icon">🎢</div>
+          <div>
+            <h4>Park Enquiries</h4>
+            <p>Ride information, group visits and bookings</p>
+          </div>
+        </div>
+
+        <div class="aw-contact-note">
+          <span>✦</span>
+          <p>Adventure is better when shared. We look forward to seeing you!</p>
+        </div>
+      </div>
+
+      <!-- RIGHT: ENQUIRY FORM -->
+      <div class="aw-contact-form-card">
+        <span class="aw-form-label">GET IN TOUCH</span>
+        <h3>Send us an enquiry</h3>
+        <p>Fill in your details and tell us how we can help.</p>
+
+        <form id="aw-contact-form">
+
+          <div class="aw-form-row">
+            <div class="aw-form-group">
+              <label for="aw-name">Full Name *</label>
+              <input type="text" id="aw-name"
+                name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="aw-form-group">
+              <label for="aw-phone">Phone Number *</label>
+              <input type="tel" id="aw-phone"
+                name="phone" placeholder="Enter phone number"
+                pattern="[0-9+\s()-]{10,18}" required>
+            </div>
+          </div>
+
+          <div class="aw-form-group">
+            <label for="aw-email">Email Address *</label>
+            <input type="email" id="aw-email"
+              name="email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="aw-form-group">
+            <label for="aw-enquiry">Enquiry Type *</label>
+            <select id="aw-enquiry" name="enquiry" required>
+              <option value="">Select an enquiry</option>
+              <option value="General Enquiry">General Enquiry</option>
+              <option value="Ride Information">Ride Information</option>
+              <option value="Group Booking">Group Booking</option>
+              <option value="School Visit">School Visit</option>
+              <option value="Birthday Celebration">Birthday Celebration</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="aw-form-group">
+            <label for="aw-date">Planned Visit Date</label>
+            <input type="date" id="aw-date" name="visitDate">
+          </div>
+
+          <div class="aw-form-group">
+            <label for="aw-message">Your Message *</label>
+            <textarea id="aw-message" name="message"
+              rows="4" placeholder="Tell us about your plans..."
+              required></textarea>
+          </div>
+
+          <button type="submit" class="aw-submit-btn">
+            Send Enquiry <span>→</span>
+          </button>
+
+          <p class="aw-form-status" id="aw-form-status"
+            role="status" aria-live="polite"></p>
+
+          <p class="aw-privacy-note">
+            Your details will be used to respond to your enquiry.
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <!-- LOCATION AREA -->
+    <div class="aw-location-card">
+      <div>
+        <span class="aw-form-label">FIND YOUR WAY</span>
+        <h3>Come find the fun!</h3>
+        <p>Visit Adventure World at Vepalagadda, near Kothagudem, Telangana.</p>
+      </div>
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=Vepalagadda%2C%20Kothagudem%2C%20Telangana"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="aw-map-btn">
+        Get Directions ↗
+      </a>
+    </div>
+
+  </div>
+</section>
+
+    <!-- =========================================================
+         F. FINAL CALL TO ACTION — picture in a rounded frame
+         ========================================================= -->
+    <section class="final-cta" aria-labelledby="final-title">
+      <div class="final-frame">
+        <div class="final-bg" aria-hidden="true">
+          <img src="assets/images/final-zipline-park.jpg" alt="" width="2200" height="1467" loading="lazy" decoding="async" data-parallax="0.1">
+        </div>
+        <div class="final-inner">
+          <p class="hero-eyebrow reveal">Adventure World · Kothagudem</p>
+          <h2 class="final-title reveal" id="final-title">Your next adventure <em>starts here.</em></h2>
+          <a class="btn btn-accent btn-lg reveal" href="#visit">Plan your visit <span class="btn-arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       G. FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="#home" aria-label="Adventure World — back to top">
+          <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M3 33 L15 13 L21 22 L26 15 L37 33 Z" fill="currentColor"/>
+            <path d="M26 15 V5" stroke="#8CFF72" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="26" cy="4.5" r="2.4" fill="#8CFF72"/>
+          </svg>
+          <span class="logo-text">Adventure <span>World</span></span>
+        </a>
+        <p>An adventure park near Vepalagadda, Kothagudem.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="Footer navigation">
+        <h2>Explore</h2>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#groups">Groups</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <h2>Visit</h2>
+        <p data-config="address" class="is-placeholder">Exact address to be added</p>
+        <p>Near Vepalagadda, Kothagudem, Bhadradri Kothagudem district, Telangana, India</p>
+      </div>
+
+      <div class="footer-col">
+        <h2>Contact</h2>
+        <p>Phone: <a data-config="phone" class="is-placeholder" href="#visit">To be announced</a></p>
+        <p>Email: <a data-config="email" class="is-placeholder" href="#visit">To be announced</a></p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> Adventure World. All rights reserved.</p>
+      <p>Photos from <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a> by Elievan Junior, Logan Weaver, Ed Wingate, Joshua Freake, Balázs, Anoof Junaid, Margo Evardson, Kevin Wiegand, Ty Downs, Roger Ce, alessandro fazari and Kilyan Sockalingum.
+        Temple photo: <a href="https://commons.wikimedia.org/wiki/File:A_view_of_Sree_Seetha_Ramachandraswamy_temple_from_a_nearby_hotel.jpg" target="_blank" rel="noopener">Sree Seetha Ramachandraswamy temple, Bhadrachalam</a> by iMahesh, Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>, resized.
+        Jumping photo: <a href="https://commons.wikimedia.org/wiki/File:Bungee-Bounce-Kid-6030.jpg" target="_blank" rel="noopener">Bungee Bounce Kid</a> by Loadmaster (David R. Tribble), Wikimedia Commons, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>, resized.
+        Ride photos from Wikimedia Commons, resized: <a href="https://commons.wikimedia.org/wiki/File:M%C3%BCnster,_Schlossplatz,_Fr%C3%BChjahrssend_--_2019_--_4145.jpg" target="_blank" rel="noopener">Giant wheel</a> by Dietmar Rabich, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>;
+        <a href="https://commons.wikimedia.org/wiki/File:Pirate_Ship_at_Gulliver%27s_Kingdom.jpg" target="_blank" rel="noopener">Pirate ship</a> by DingRawD, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>;
+        <a href="https://commons.wikimedia.org/wiki/File:Water_slide,_Ada_East_(P1090930).jpg" target="_blank" rel="noopener">Water slide</a> by Matti Blume, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>;
+        <a href="https://commons.wikimedia.org/wiki/File:Kart_Racing_1.jpg" target="_blank" rel="noopener">Go-kart track</a>, public domain.</p>
+    </div>
+  </footer>
+
+  <!-- Back-to-top button (appears after scrolling down) -->
+  <a class="back-to-top" id="back-to-top" href="#home" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V6m0 0-6 6m6-6 6 6"/></svg>
+  </a>
+
+  <!-- Gallery lightbox (large image preview) -->
+  <dialog class="lightbox" id="lightbox" aria-label="Image preview">
+    <button class="lb-btn lb-close" type="button" aria-label="Close preview">&times;</button>
+    <button class="lb-btn lb-prev" type="button" aria-label="Previous image">&#8249;</button>
+    <figure>
+      <img id="lb-img" src="data:," alt="">
+      <figcaption id="lb-caption"></figcaption>
+    </figure>
+    <button class="lb-btn lb-next" type="button" aria-label="Next image">&#8250;</button>
+  </dialog>
+
+  <!-- Libraries (from CDNs). If they fail to load, the site still works,
+       just without the scroll effects.
+       GSAP + ScrollTrigger: scroll effects. Three.js (for the 3D ride
+       cards) is loaded later by script.js, only when the activity
+       carousel comes near the screen on a device that can run it. -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+ <!-- Page behaviour -->
+<script src="js/motion.js" defer></script>
+<script src="script.js" defer></script>
+
+<!-- Automatic Adventure Carousel -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const track = document.getElementById("thrill-track");
+  const carousel = document.getElementById("thrill-carousel");
+
+  if (!track || !carousel || track.dataset.autoReady === "yes") return;
+
+  track.dataset.autoReady = "yes";
+
+  const originalCards = Array.from(track.children);
+  if (originalCards.length === 0) return;
+
+  originalCards.forEach(function (card) {
+    const clone = card.cloneNode(true);
+    clone.setAttribute("aria-hidden", "true");
+    clone.querySelectorAll("a").forEach(function (link) {
+      link.removeAttribute("href");
+      link.removeAttribute("data-enquire");
+      link.removeAttribute("data-activity");
+    });
+    track.appendChild(clone);
+  });
+
+  let position = 0;
+  let previousTime = 0;
+  const speed = 35;
+
+  function slide(time) {
+    if (!track.isConnected) return;
+
+    if (!previousTime) previousTime = time;
+
+    const elapsed = Math.min((time - previousTime) / 1000, 0.05);
+    previousTime = time;
+
+    const distance = track.scrollWidth / 2;
+
+    if (distance > 0) {
+      position += speed * elapsed;
+
+      if (position >= distance) position %= distance;
+
+      track.style.transform =
+        "translate3d(-" + position + "px, 0, 0)";
+    }
+
+    requestAnimationFrame(slide);
+  }
+
+  requestAnimationFrame(slide);
+});
+</script>
+<div class="custom-cursor"></div>
+<!-- Feedback Section -->
+<section class="feedback-section" id="feedback">
+  <div class="feedback-container">
+
+    <div class="feedback-heading">
+      <span class="feedback-tag">YOUR EXPERIENCE MATTERS</span>
+      <h2>How Was Your <span>Adventure?</span></h2>
+      <p>
+        Had an amazing experience? Share your feedback
+        and help us make every adventure unforgettable!
+      </p>
+    </div>
+
+    <form id="feedback-form" class="feedback-form">
+
+      <div class="form-group">
+        <label for="visitor-name">Your Name</label>
+        <input
+          type="text"
+          id="visitor-name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="visitor-email">Email Address</label>
+        <input
+          type="email"
+          id="visitor-email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Rate Your Experience</label>
+
+        <div class="star-rating" aria-label="Rate your experience">
+          <input type="radio" id="star5" name="rating" value="5" required />
+          <label for="star5" title="5 stars">★</label>
+
+          <input type="radio" id="star4" name="rating" value="4" />
+          <label for="star4" title="4 stars">★</label>
+
+          <input type="radio" id="star3" name="rating" value="3" />
+          <label for="star3" title="3 stars">★</label>
+
+          <input type="radio" id="star2" name="rating" value="2" />
+          <label for="star2" title="2 stars">★</label>
+
+          <input type="radio" id="star1" name="rating" value="1" />
+          <label for="star1" title="1 star">★</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="visitor-feedback">Your Feedback</label>
+        <textarea
+          id="visitor-feedback"
+          name="feedback"
+          rows="5"
+          placeholder="Tell us about your adventure..."
+          required
+        ></textarea>
+      </div>
+
+      <button type="submit" class="feedback-submit">
+        Submit Feedback <span>→</span>
+      </button>
+
+      <p id="feedback-message" class="feedback-message" role="status"></p>
+
+    </form>
+  </div>
+</section>
+
+</body>
+</html>
